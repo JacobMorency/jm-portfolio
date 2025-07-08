@@ -10,10 +10,10 @@ export default function LandingPage() {
         className="min-h-screen flex flex-col items-center justify-center text-center"
         id="home"
       >
-        <h1 className="text-7xl">
+        <h1 className="text-6xl">
           Hello, {"I'm"} <span className="text-primary">Jacob</span>.
         </h1>
-        <p className="text-7xl">{"I'm"} a full stack web developer.</p>
+        <p className="text-6xl">{"I'm"} a full stack web developer.</p>
         <div className="my-4">
           <a
             href="#about"
@@ -26,13 +26,13 @@ export default function LandingPage() {
 
       <div>
         <NavBar />
-        <div id="about" className="w-full min-h-screen">
+        <div id="about" className="w-full min-h-screen px-8">
           <AboutSection />
         </div>
-        <div id="projects" className="w-full min-h-screen">
+        <div id="projects" className="w-full min-h-screen px-8">
           <ProjectsSection />
         </div>
-        <div id="contact" className="w-full min-h-screen">
+        <div id="contact" className="w-full min-h-screen px-8">
           <ContactSection />
         </div>
       </div>
