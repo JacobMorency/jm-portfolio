@@ -6,7 +6,10 @@ import NavBar from "@/components/ui/navbar";
 export default function LandingPage() {
   return (
     <div>
-      <div className="min-h-screen flex flex-col items-center justify-center text-center">
+      <div
+        className="min-h-screen flex flex-col items-center justify-center text-center"
+        id="home"
+      >
         <h1 className="text-7xl">
           Hello, {"I'm"} <span className="text-primary">Jacob</span>.
         </h1>
@@ -29,7 +32,7 @@ export default function LandingPage() {
         <div id="projects" className="w-full min-h-screen">
           <ProjectsSection />
         </div>
-        <div id="projects" className="w-full min-h-screen">
+        <div id="contact" className="w-full min-h-screen">
           <ContactSection />
         </div>
       </div>
