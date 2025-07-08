@@ -6,20 +6,6 @@ import { Textarea } from "@/components/ui/textarea";
 export default function ContactForm() {
   return (
     <form className="flex flex-col gap-4">
-      {/* <input
-        type="text"
-        placeholder="Your Name"
-        className="border border-gray-300 rounded-md p-2"
-      />
-      <input
-        type="email"
-        placeholder="Your Email"
-        className="border border-gray-300 rounded-md p-2"
-      />
-      <textarea
-        placeholder="Your Message"
-        className="border border-gray-300 rounded-md p-2 h-32"
-      /> */}
       <Label htmlFor="name">Your Name</Label>
       <Input id="name" type="text" placeholder="Your Name" required />
       <Label htmlFor="email">Your Email</Label>
