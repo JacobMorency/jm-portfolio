@@ -8,13 +8,13 @@ export default function LandingPage() {
     <div>
       <div className="min-h-screen flex flex-col items-center justify-center text-center">
         <h1 className="text-7xl">
-          Hello, {"I'm"} <span className="text-secondary">Jacob</span>.
+          Hello, {"I'm"} <span className="text-primary">Jacob</span>.
         </h1>
         <p className="text-7xl">{"I'm"} a full stack web developer.</p>
         <div className="my-4">
           <a
             href="#about"
-            className="bg-secondary px-6 py-3 rounded-lg flex items-center justify-center"
+            className="bg-primary px-6 py-3 rounded-lg flex items-center justify-center"
           >
             See My Work <MoveDown size={18} />
           </a>
