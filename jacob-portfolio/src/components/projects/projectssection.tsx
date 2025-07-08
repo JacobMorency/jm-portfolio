@@ -1,3 +1,5 @@
+import ProjectCard from "@/components/projects/projectcard";
+
 export default function ProjectsSection() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
@@ -7,6 +9,20 @@ export default function ProjectsSection() {
         my skills in full stack web development, utilizing various technologies
         and frameworks.
       </p>
+      <div>
+        <div className="grid grid-cols-2">
+          <ProjectCard />
+          <div></div>
+        </div>
+        <div className="grid grid-cols-2">
+          <div></div>
+          <ProjectCard />
+        </div>
+        <div className="grid grid-cols-2">
+          <ProjectCard />
+          <div></div>
+        </div>
+      </div>
     </div>
   );
 }
