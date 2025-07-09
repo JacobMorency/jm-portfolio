@@ -4,14 +4,16 @@ import { Github, Globe } from "lucide-react";
 type ProjectCardProps = {
   title: string;
   description: string;
-  link: string;
+  demoLink?: string;
   src: string;
+  githubLink: string;
 };
 
 export default function ProjectCard({
   title,
   description,
-  link,
+  demoLink,
+  githubLink,
   src,
 }: ProjectCardProps) {
   return (
@@ -33,13 +35,15 @@ export default function ProjectCard({
         </div>
         <div className="flex justify-center gap-2 mt-4">
           <a
-            href="#"
+            href={demoLink}
+            target="_blank"
             className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
           >
             <Globe />
           </a>
           <a
-            href="#"
+            href={githubLink}
+            target="_blank"
             className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
           >
             <Github />
