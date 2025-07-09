@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Github, Globe } from "lucide-react";
 
 type ProjectCardProps = {
