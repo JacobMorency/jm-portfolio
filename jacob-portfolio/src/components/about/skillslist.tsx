@@ -3,7 +3,7 @@ import Skill from "@/components/about/skill";
 export default function SkillsList() {
   return (
     <div>
-      <h3 className="text-center">Skills List</h3>
+      <h3 className="text-center font-semibold text-3xl my-3">My Skills</h3>
       <div className="grid grid-cols-3 gap-1">
         <Skill title="JavaScript" icon="/icons/javascript.png" />
         <Skill title="React" icon="/icons/react.png" />
