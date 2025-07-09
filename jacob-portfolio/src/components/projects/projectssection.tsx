@@ -5,6 +5,8 @@ export default function ProjectsSection() {
     "Rive is a lifting tracker app that allows users to log their workouts, track their progress, and visualize their lifting data. It features a user-friendly interface, real-time data updates, and integration with various fitness APIs to provide a comprehensive lifting experience.";
   const bingeListDescription =
     "BingeList is a movie and TV show tracking app that helps users keep track of what they have watched, want to watch, and are currently watching. It includes features like favorites, watchlists, and search functionality.";
+  const naviDescription =
+    "Centralized app for teachers and students to book appointments within the teacher's office hours. It allows students to see available time slots and book appointments directly, while teachers can manage their availability and view upcoming appointments.";
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-4xl font-bold">Projects</h1>
@@ -28,7 +30,12 @@ export default function ProjectsSection() {
           demoLink="https://thebingelist.vercel.app/"
           githubLink="https://github.com/JacobMorency/binge-list"
         />
-        <ProjectCard title="TBD" src="/images/rive.png" />
+        <ProjectCard
+          title="NAVI"
+          src="/images/rive.png"
+          description={naviDescription}
+          githubLink=""
+        />
       </div>
     </div>
   );

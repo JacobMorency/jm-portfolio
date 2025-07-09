@@ -33,13 +33,15 @@ export default function ProjectCard({
           </p>
         </div>
         <div className="flex justify-center gap-2 mt-4">
-          <a
-            href={demoLink}
-            target="_blank"
-            className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
-          >
-            <Globe />
-          </a>
+          {demoLink && (
+            <a
+              href={demoLink}
+              target="_blank"
+              className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
+            >
+              <Globe />
+            </a>
+          )}
           <a
             href={githubLink}
             target="_blank"
