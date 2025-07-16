@@ -1,3 +1,4 @@
+"use client";
 import { Github, Globe } from "lucide-react";
 
 type ProjectCardProps = {
@@ -6,6 +7,7 @@ type ProjectCardProps = {
   demoLink?: string;
   src: string;
   githubLink: string;
+  showFullImage: (src: string) => void;
 };
 
 export default function ProjectCard({
@@ -14,15 +16,17 @@ export default function ProjectCard({
   demoLink,
   githubLink,
   src,
+  showFullImage,
 }: ProjectCardProps) {
   return (
     <div className="p-4 flex flex-col items-center bg-card max-w-sm rounded-lg shadow-md min-h-150 max-h-150">
       <div
-        className="rounded-md bg h-48 w-full hover:scale-105 transition-transform duration-300 ease-in-out"
+        className="rounded-md bg h-48 w-full hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgb(0, 0, 0, 0.4) , var(--card)), url(${src})`,
+          backgroundImage: `linear-gradient(to bottom, rgb(0, 0, 0, 0.2) , var(--card)), url(${src})`,
           backgroundSize: "cover",
         }}
+        onClick={() => showFullImage(src)}
       ></div>
       <div className="flex flex-col justify-between flex-1 w-full">
         <div className="flex flex-col w-full flex-1">
