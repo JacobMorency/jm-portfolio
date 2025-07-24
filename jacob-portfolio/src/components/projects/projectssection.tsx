@@ -2,10 +2,11 @@
 import Image from "next/image";
 import ProjectCard from "@/components/projects/projectcard";
 import { useState } from "react";
+import SectionHeading from "@/components/ui/sectionheading";
 
 export default function ProjectsSection() {
   const [showImage, setShowImage] = useState<boolean>(false);
-  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const riveDescription =
     "Rive is a lifting tracker app that allows users to log their workouts, track their progress, and visualize their lifting data. It features a user-friendly interface, real-time data updates, and integration with various fitness APIs to provide a comprehensive lifting experience.";
   const bingeListDescription =
@@ -28,21 +29,23 @@ export default function ProjectsSection() {
         }`}
         onClick={() => setShowImage(false)}
       >
-        <Image
-          src={selectedImage}
-          alt="Full Size"
-          className="max-w-full max-h-full object-contain"
-          width={400}
-          height={300}
-        />
+        {selectedImage && (
+          <Image
+            src={selectedImage}
+            alt="Full Size"
+            className="max-w-full max-h-full object-contain"
+            width={400}
+            height={300}
+          />
+        )}
       </div>
 
       <>
-        <h1 className="text-4xl font-bold">Projects</h1>
+        <SectionHeading title="Projects" />
         <p className="mt-4 text-lg text-center max-w-2xl">
           Here are some of the projects I have worked on.
         </p>
-        <div className="grid grid-cols-3 gap-4 my-4">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-4 my-4">
           <ProjectCard
             title="Rive - Lifting Tracker"
             src="/images/rive.png"

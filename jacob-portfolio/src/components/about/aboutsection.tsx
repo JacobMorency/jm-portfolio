@@ -13,10 +13,9 @@ export default function AboutSection() {
           apps and leveling up with every project.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-24 max-w-5xl px-8 mt-16">
+      <div className="flex flex-col md:flex-row  max-w-8xl px-8">
         <div className="my-8">
-          <h3 className="font-semibold text-3xl my-3">Get to know me!</h3>
-          <PersonStanding size={256} className="text-primary" />
+          <h3 className="font-semibold text-3xl my-3 ">Get to know me!</h3>
           <p className="my-4 text-lg">
             {"I'm"} a dedicated developer who loves solving problems and
             learning new technologies. I enjoy collaborating with others,

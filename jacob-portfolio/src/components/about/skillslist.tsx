@@ -22,9 +22,9 @@ export default function SkillsList() {
         {skills.map((skills, index) => (
           <div
             key={index}
-            className="bg-card px-8 py-4 rounded flex items-center justify-center min-w-20 hover:bg-primary hover:scale-115 transition-transform duration-300ms ease-in-out"
+            className="bg-card px-4 md:px-8 py-4 rounded flex items-center justify-center min-w-10 md:min-w-20 hover:bg-primary hover:scale-115 transition-transform duration-300ms ease-in-out"
           >
-            <p className="text-lg font-semibold">{skills.title}</p>
+            <p className="text-sm md:text-lg font-semibold">{skills.title}</p>
           </div>
         ))}
       </div>
