@@ -5,10 +5,10 @@ import ProjectsSection from "@/components/projects/projectssection";
 import NavBar from "@/components/ui/navbar";
 export default function LandingPage() {
   return (
-    <div>
-      <div
-        className="min-h-screen flex flex-col items-center justify-center text-center"
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <section
         id="home"
+        className="h-screen snap-start flex flex-col items-center justify-center text-center"
       >
         <h1 className="text-6xl">
           Hello, {"I'm"} <span className="text-primary">Jacob</span>.
@@ -22,20 +22,17 @@ export default function LandingPage() {
             See My Work <MoveDown size={18} />
           </a>
         </div>
-      </div>
-
-      <div>
-        <NavBar />
-        <div id="about" className="w-full min-h-screen px-8">
-          <AboutSection />
-        </div>
-        <div id="projects" className="w-full min-h-screen px-8">
-          <ProjectsSection />
-        </div>
-        <div id="contact" className="w-full min-h-screen px-8">
-          <ContactSection />
-        </div>
-      </div>
+      </section>
+      <NavBar />
+      <section id="about" className="h-screen snap-start px-8">
+        <AboutSection />
+      </section>
+      <section id="projects" className="h-screen snap-start px-8">
+        <ProjectsSection />
+      </section>
+      <section id="contact" className="h-screen snap-start px-8">
+        <ContactSection />
+      </section>
     </div>
   );
 }
