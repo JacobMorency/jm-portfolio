@@ -1,5 +1,4 @@
 import SectionHeading from "@/components/ui/sectionheading";
-import { PersonStanding } from "lucide-react";
 import SkillsList from "@/components/about/skillslist";
 import { Button } from "@/components/ui/button";
 
