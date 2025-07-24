@@ -17,9 +17,9 @@ export default function LandingPage() {
         <div className="my-4">
           <a
             href="#about"
-            className="bg-primary px-6 py-3 rounded-lg flex items-center justify-center"
+            className="bg-primary px-6 py-3 rounded-lg flex items-center gap-4 justify-center font-bold text-lg"
           >
-            See My Work <MoveDown size={18} />
+            See My Work <MoveDown size={18} strokeWidth={4} />
           </a>
         </div>
       </section>

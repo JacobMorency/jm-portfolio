@@ -1,22 +1,54 @@
-import Skill from "@/components/about/skill";
+"use client";
 
 export default function SkillsList() {
+  const skills = [
+    { title: "JavaScript" },
+    { title: "React" },
+    { title: "HTML5" },
+    { title: "CSS3" },
+    { title: "Tailwind" },
+    { title: "C#" },
+    { title: "Next.js" },
+    { title: "Git" },
+    { title: "GitHub" },
+    { title: "ASP.NET" },
+    { title: "Azure DevOps" },
+  ];
+
   return (
     <div>
-      <h3 className="text-center font-semibold text-3xl my-3">My Skills</h3>
-      <div className="grid grid-cols-3 gap-1">
-        <Skill title="JavaScript" icon="/icons/javascript.png" />
-        <Skill title="React" icon="/icons/react.png" />
-        <Skill title="HTML5" icon="/icons/html5.png" />
-        <Skill title="CSS3" icon="/icons/css3.png" />
-        <Skill title="Tailwind CSS" icon="/icons/tailwind.png" />
-        <Skill title="C#" icon="/icons/csharp.png" />
-        <Skill title="Next.JS" icon="/icons/nextjs.png" />
-        <Skill title="Git" icon="/icons/git.png" />
-        <Skill title="GitHub" icon="/icons/github.png" />
-        <Skill title="ASP.NET" icon="/icons/aspnet.png" />
-        <Skill title="Azure DevOps" icon="/icons/azuredevops.png" />
+      <h3 className=" font-semibold text-3xl my-3">My Skills</h3>
+      <div className="flex gap-4 flex-wrap">
+        {skills.map((skills, index) => (
+          <div
+            key={index}
+            className="bg-card px-8 py-4 rounded flex items-center justify-center min-w-20 hover:bg-primary hover:scale-115 transition-transform duration-300ms ease-in-out"
+          >
+            <p className="text-lg font-semibold">{skills.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
+}
+
+{
+  /* <Carousel
+          opts={{
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {skills.map((skill, index) => (
+              <CarouselItem
+                key={index}
+                className="flex justify-center items-center basis-1/3"
+              >
+                <Skill title={skill.title} icon={skill.icon} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious>Previous</CarouselPrevious>
+          <CarouselNext>Next</CarouselNext>
+        </Carousel> */
 }
