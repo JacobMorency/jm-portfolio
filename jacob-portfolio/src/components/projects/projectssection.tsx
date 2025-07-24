@@ -40,9 +40,7 @@ export default function ProjectsSection() {
       <>
         <h1 className="text-4xl font-bold">Projects</h1>
         <p className="mt-4 text-lg text-center max-w-2xl">
-          Here are some of the projects I have worked on. Each project showcases
-          my skills in full stack web development, utilizing various
-          technologies and frameworks.
+          Here are some of the projects I have worked on.
         </p>
         <div className="grid grid-cols-3 gap-4 my-4">
           <ProjectCard
