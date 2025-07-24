@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <nav className="sticky top-0 shadow-md p-4 bg-primary my-4">
+    <nav className="sticky top-0 shadow-md p-4 bg-primary my-4 hidden md:block">
       <ul className="flex space-x-8 justify-end">
         <li>
           <a className="text-lg font-bold" href="#home">

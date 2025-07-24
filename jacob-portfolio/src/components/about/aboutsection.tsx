@@ -13,10 +13,10 @@ export default function AboutSection() {
           apps and leveling up with every project.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row  max-w-8xl px-8">
+      <div className="flex flex-col md:flex-row max-w-8xl px-8 md:gap-24">
         <div className="my-8">
           <h3 className="font-semibold text-3xl my-3 ">Get to know me!</h3>
-          <p className="my-4 text-lg">
+          <p className="my-4 text-lg md:max-w-2xl">
             {"I'm"} a dedicated developer who loves solving problems and
             learning new technologies. I enjoy collaborating with others,
             sharing ideas, and turning concepts into real, impactful
@@ -29,7 +29,7 @@ export default function AboutSection() {
           </Button>
         </div>
 
-        <div className="my-8">
+        <div className="my-8 md:max-w-2xl">
           <SkillsList />
         </div>
       </div>

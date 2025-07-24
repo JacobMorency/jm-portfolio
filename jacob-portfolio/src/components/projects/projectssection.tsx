@@ -41,34 +41,36 @@ export default function ProjectsSection() {
       </div>
 
       <>
-        <SectionHeading title="Projects" />
-        <p className="mt-4 text-lg text-center max-w-2xl">
-          Here are some of the projects I have worked on.
-        </p>
-        <div className="flex flex-col md:grid md:grid-cols-3 gap-4 my-4">
-          <ProjectCard
-            title="Rive - Lifting Tracker"
-            src="/images/rive.png"
-            description={riveDescription}
-            demoLink="https://rivelifts.vercel.app/"
-            githubLink="https://github.com/JacobMorency/rive-lift-tracker-web"
-            showFullImage={showFullImage}
-          />
-          <ProjectCard
-            title="BingeList"
-            src="/images/bingelist.png"
-            description={bingeListDescription}
-            demoLink="https://thebingelist.vercel.app/"
-            githubLink="https://github.com/JacobMorency/binge-list"
-            showFullImage={showFullImage}
-          />
-          <ProjectCard
-            title="NAVI"
-            src="/images/navi2.png"
-            description={naviDescription}
-            githubLink=""
-            showFullImage={showFullImage}
-          />
+        <div className="mt-16">
+          <SectionHeading title="Projects" />
+          <p className="mt-4 text-lg text-center">
+            Here are some of the projects I have worked on.
+          </p>
+          <div className="flex flex-col md:grid md:grid-cols-3 gap-4 my-4">
+            <ProjectCard
+              title="Rive - Lifting Tracker"
+              src="/images/rive.png"
+              description={riveDescription}
+              demoLink="https://rivelifts.vercel.app/"
+              githubLink="https://github.com/JacobMorency/rive-lift-tracker-web"
+              showFullImage={showFullImage}
+            />
+            <ProjectCard
+              title="BingeList"
+              src="/images/bingelist.png"
+              description={bingeListDescription}
+              demoLink="https://thebingelist.vercel.app/"
+              githubLink="https://github.com/JacobMorency/binge-list"
+              showFullImage={showFullImage}
+            />
+            <ProjectCard
+              title="NAVI"
+              src="/images/navi2.png"
+              description={naviDescription}
+              githubLink=""
+              showFullImage={showFullImage}
+            />
+          </div>
         </div>
       </>
     </div>

@@ -14,6 +14,9 @@ export default function LandingPage() {
       setIsMobile(window.innerWidth < 768);
     };
     checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
@@ -71,7 +74,6 @@ export default function LandingPage() {
               </a>
             </div>
           </section>
-          {/* <NavBar /> */}
           <section id="about" className="px-4">
             <AboutSection />
           </section>
