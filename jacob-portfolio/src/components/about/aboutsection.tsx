@@ -10,9 +10,8 @@ export default function AboutSection() {
         <div className="my-8">
           <PersonStanding size={256} className="text-primary" />
           <p className="mt-4 text-lg">
-            I am a full stack web developer with a passion for creating dynamic
-            and responsive web applications. I love working with the latest
-            technologies and continuously learning new skills.
+            Full stack developer passionate about building smooth, responsive
+            web apps and leveling up with every project.
           </p>
         </div>
 
