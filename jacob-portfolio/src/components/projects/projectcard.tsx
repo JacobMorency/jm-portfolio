@@ -41,7 +41,7 @@ export default function ProjectCard({
             <a
               href={demoLink}
               target="_blank"
-              className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
+              className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-white transition-colors duration-300"
             >
               <Globe />
             </a>
@@ -49,7 +49,7 @@ export default function ProjectCard({
           <a
             href={githubLink}
             target="_blank"
-            className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-background transition-colors duration-300"
+            className="text-primary border border-primary p-2 rounded-md hover:bg-primary hover:text-white transition-colors duration-300"
           >
             <Github />
           </a>
