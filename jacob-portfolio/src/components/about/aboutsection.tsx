@@ -16,12 +16,14 @@ export default function AboutSection() {
         <div className="my-8">
           <h3 className="font-semibold text-3xl my-3 ">Get to know me!</h3>
           <p className="my-4 text-lg md:max-w-2xl">
-            {"I'm"} a dedicated developer who loves solving problems and
-            learning new technologies. I enjoy collaborating with others,
-            sharing ideas, and turning concepts into real, impactful
-            applications. When {"I'm"} not coding, you can find me exploring new
-            tools, reading tech blogs, or working on side projects to keep my
-            skills sharp.
+            {"I'm"} a curious full stack developer who loves building clean,
+            responsive web apps. Especially ones that solve real problems.{" "}
+            {"I'm "}
+            constantly learning, whether {"it's"} diving into side projects like
+            my fitness tracker, rebuilding my portfolio from scratch, or testing
+            out new tools like Supabase or Tailwind. Outside of coding, {"I'm "}
+            probably at the gym, brainstorming project ideas, or playing video
+            games.
           </p>
           <Button className="my-2 font-semibold text-lg p-6">
             Contact Me!
