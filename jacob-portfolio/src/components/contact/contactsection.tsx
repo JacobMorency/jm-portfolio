@@ -6,7 +6,7 @@ export default function ContactSection() {
       <SectionHeading title="Contact Me" />
       <p className="mt-4 text-lg text-center">
         If you have any questions or would like to get in touch, feel free to
-        reach out via email or connect with me on social media.
+        reach out via email!.
       </p>
       <div className="mt-8 w-full max-w-md">
         <ContactForm />
