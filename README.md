@@ -44,6 +44,6 @@ My personal portfolio site, built to showcase my work, skills, and contact infor
 
 ## 🔗 Connect With Me
 
-- [LinkedIn](https://linkedin.com/in/jacobmorency)
-- [Resume PDF](./jacob_resume.pdf)
+- [LinkedIn](https://linkedin.com/in/jacob-morency)
+- [Resume PDF](./jacob_morency_resume.pdf)
 - [Email Me](mailto:jvmorency@gmail.com)
